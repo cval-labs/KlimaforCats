@@ -41,8 +41,7 @@ I have chosen to duplicate the following layout from the **Klima** app:
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+![KlimaforCats](https://user-images.githubusercontent.com/123886642/225964794-3fb2d3d2-25e2-4c19-9a13-94db611eccb6.gif)
 
 GIF created with **ScreenToGif**
 
