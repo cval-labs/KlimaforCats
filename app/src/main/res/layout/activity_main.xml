@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cat_emoji"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cat_emoji"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/greatchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Great choice!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cat_emoji"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/footprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="You will offset your 310kg carbon\nfootprint by"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/greatchoice"
+        app:layout_constraintStart_toStartOf="@id/greatchoice"
+        app:layout_constraintTop_toBottomOf="@id/greatchoice" />
+
+    <TextView
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Eating fish"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/footprint"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@id/footprint"
+        app:layout_constraintTop_toBottomOf="@id/footprint" />
+
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Playing with recycled toys"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/value1"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@id/value1"
+        app:layout_constraintTop_toBottomOf="@id/value1" />
+
+    <TextView
+        android:id="@+id/value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Using biodegradable kitty litter"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="@+id/value2"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@id/value2"
+        app:layout_constraintTop_toBottomOf="@id/value2" />
+
+    <ImageView
+        android:id="@+id/catfood"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/value1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/cat_food" />
+
+    <ImageView
+        android:id="@+id/cattoys"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/catfood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/value2"
+        app:srcCompat="@drawable/cat_toys" />
+
+    <ImageView
+        android:id="@+id/kittylitter"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toStartOf="@id/value3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cattoys"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/kitty_litter" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Meow"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/value3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:contentDescription="back button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/catfood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageButton
+        android:id="@+id/closebutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:contentDescription="close button"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@id/backbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
