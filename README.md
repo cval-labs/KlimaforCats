@@ -35,6 +35,7 @@ The following STRETCH features are implemented:
 ## Chosen Screenshot
 
 I have chosen to duplicate the following layout from the **Klima** app:
+
 ![Great choice! (Klima) – Design Vault](https://user-images.githubusercontent.com/123886642/225964995-c2b47531-0271-434f-853b-50415db0fd5c.png)
 
 ## Video Demo
